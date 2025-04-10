@@ -1,0 +1,49 @@
+
+body {
+  font-family:sans-serif;
+  background-color: #500101;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.favorite-heels {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Space between images */
+  flex-wrap: nowrap; /* Keeps images in a single line */
+}
+
+.HEELS {
+  text-align: center;
+  background: rgb(241, 238, 238);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow:#000000
+}
+
+.HEELS img {
+  width: 500%;
+  height: auto;
+  max-width: 300px; /* You can adjust the image size */
+  border-radius: 10px;
+}
+
+h2 {
+  color: #000000;
+  margin-top: 10px;
+}
+.footer{
+width: 100%;
+background-color: #550404;
+   color: #f0f0f0; 
+   text-align: center;
+    padding: 20px; font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-style: italic;
+ font-size: 1.1em;
+margin-top: 10px; 
+font-size: 0.9em;
+}
