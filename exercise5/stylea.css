@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+    body {
+    margin: 0;
+    height: 100vh;
+    background-color: #ececec;
+  }
+h1{
+  font-family:monospace;
+    text-align: center;
+ border-style:outset;
+    border-color: #7c053d;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #ececec;
+ color: #4e0125;
+  }
+ video {
+  border: 4px outset #7c053d;
+  border-radius: 20px;
+ }
+  .video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
