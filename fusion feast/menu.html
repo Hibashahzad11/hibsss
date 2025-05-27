@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu page</title>
+    <link rel="stylesheet" href="stylef.css"> <!--linking with external stylesheet-->
+</head>
+<body>
+<header class="menu-header">
+     <img src="fusion feast 2.png" alt="logo" width="150" height="150" class="header-image"><!--fusion feast logo-->
+  <h1>MENU</h1>
+   <nav class="navbar"><!--navbar-->
+    <a href="home.html">HOMEPAGE</a><!--connecting with other pages-->
+<a href="online ordering.html">ORDER ONLINE</a><!--connecting with other pages-->
+<a href="about us.html"> ABOUT US</a><!--connecting with other pages-->
+<a href="reviews.html">REVIEWS</a><!--connecting with other pages-->
+<a href="chef special.html">OUR CHEF</a><!--connecting with other pages-->
+</nav>
+</header>
+<div class="search">
+    <h1>🍽 Search Our Menu</h1>
+<input type="text" id="searchBar" placeholder="Type a dish name...">
+<button onclick="searchMenu()">Search</button>
+</div>
+<div class="menu-container">
+  <div class="menu-item"> <!--karahi items-->
+    <img src="karahi.jpg" alt="CHICKEN KARAHI">
+<h3>CHICKEN KARAHI</h3>
+    <p> Spicy chicken cooked in tomato-based gravy.</p><!--description-->
+    <span class="price">AED 25</span><!--price-->
+    <button onclick="addToCart('CHICKEN KARAHI', 30)">ADD TO CART</button><!--button-->
+  </div>
+<div class="menu-item">
+    <img src="mutton karahi.jpg" alt="MUTTON KARAHI">
+<h3>MUTTON KARAHI</h3>
+<p>Tender mutton in rich, traditional spices.</p><!--description-->
+<span class="price">AED 30</span><!--price-->
+    <button onclick="addToCart('MUTTON KARAHI', 60)">ADD TO CART</button><!--button-->
+</div>
+    <div class="menu-item">
+        <img src="beef karahi.jpg" alt="BEEF KARAHI">
+ <h3>BEEF KARAHI</h3>
+ <p> Juicy beef chunks simmered in bold flavors.</p><!--description-->    
+ <span class="price">AED 40</span><!--price-->
+    <button onclick="addToCart('BEEF KARAHI', 40)">ADD TO CART</button><!--button-->
+    </div>
+    <div class="menu-item">
+        <img src="white karahi.jpg" alt="WHITE KARAHI">
+    <h3>WHITE KARAHI</h3>
+    <p>Delicate, yogurt-based karahi with a white gravy.</p><!--description-->    
+ <span class="price">AED 45</span><!--price-->
+    <button onclick="addToCart('WHITE KARAHI', 45)">ADD TO CART</button><!--button-->
+</div>
+    <div class="menu-item">
+        <img src="seekh kabab karahi.jpg" alt="SEEKH KABAB KARAHI" width="150">
+    <h3>SEEKH KABAB KARAHI</h3>
+    <p>Minced meat skewers grilled with spices.</p><!--description-->    
+ <span class="price">AED 45</span>   <!--price-->
+    <button onclick="addToCart('SEEKH KABAB KARAHI', 45)">ADD TO CART</button><!--button-->
+</div>
+    <div class="menu-item"><!--bbq-->
+<img src="chicken bbq.jpg" alt="CHICKEN BBQ" width="150">
+<h3>CHICKEN BBQ</h3>
+<p>Juicy grilled chicken with spices.</p><!--description-->    
+<span class="price"> AED 25</span> <!--price-->
+    <button onclick="addToCart('CHICKEN BBQ', 25)">ADD TO CART</button><!--button-->
+</div>
+  <div class="menu-item">
+    <img src="mutton bbq.jpg" alt="MUTTON BBQ">
+<h3>MUTTON BBQ</h3>
+<p>Tender mutton grilled to perfection.</p><!--description-->
+<span class="price">AED 35</span> <!--price-->
+    <button onclick="addToCart('MUTTON BBQ', 35)">ADD TO CART</button><!--button-->
+  </div>  
+   <div class="menu-item">
+<img src="malai boti.jpg" alt="MALAI BOTI">
+<h3>MALAI BOTI</h3>   
+<p>Creamy, soft chicken cubes.</p><!--description-->
+<span class="price">AED 34</span> <!--price-->
+    <button onclick="addToCart('MALAI BOTI', 34)">ADD TO CART</button><!--button-->
+</div> 
+    <div class="menu-item">
+<img src="chapli kabab.jpg" alt="CHAPLI KABAB">
+<h3>CHAPLI KABAB</h3>
+<p>Spiced minced meat patty.</p><!--description-->
+<span class="price">AED 34</span> <!--price-->
+    <button onclick="addToCart('CHAPLI KABAB', 34)">ADD TO CART</button><!--button-->
+    </div>
+        <div class="menu-item">
+<img src="bihari kabab.jpg" alt="BIHARI KABAB">
+<h3>BIHARI KABAB</h3>
+<p> Marinated beef strips with rich spices.</p><!--description-->
+<span class="price">AED 26</span> <!--price-->
+    <button onclick="addToCart('BIHARI KABAB', 25)">ADD TO CART</button> <!--button-->
+    </div>
+        <div class="menu-item">
+<img src="seekh kabab.jpg" alt="SEEKH KABAB">
+<h3>SEEKH KABAB</h3>
+<p>Minced meat skewers, grilled over flame.</p><!--description-->
+<span class="price">AED 30</span> <!--price-->
+    <button onclick="addToCart('SEEKH KABAB', 30)">ADD TO CART</button><!--button-->
+    </div>
+        <div class="menu-item">
+<img src="bbq.jpg" alt="AFGHANI BOTI">
+<h3>AFGHANI BOTI </h3>
+<p> Mildly spiced, creamy grilled meat.</p><!--description-->
+<span class="price">AED 25</span><!--price-->
+    <button onclick="addToCart('AFGHANI BOTI', 25)">ADD TO CART</button><!--button-->
+    </div>    
+<div class="menu-item">
+<img src="chargha.jpg" alt="CHARGHA">
+<h3>CHARGHA</h3>
+<p> Mildly spiced,grilled chicken.</p><!--description-->
+<span class="price">AED 30</span><!--price-->
+    <button onclick="addToCart('CHARGHA', 309)">ADD TO CART</button><!--button-->
+    </div>    
+    <div class="menu-item"><!--rice items-->
+<img src="chicken biryani.jpg" alt="CHICKEN BIRYANI">
+<h3>CHICKEN BIRYANI </h3>
+<P> Spiced rice with tender chicken.</P><!--description-->
+<span class="price">AED 25</span><!--price-->
+    <button onclick="addToCart('Chicken Biryani', 25)">ADD TO CART</button><!--button--> 
+    </div>
+    <div class="menu-item">
+<img src="biryani.jpg" alt="MUTTON BIRYANI">
+<h3>MUTTON BIRYANI </h3>
+<P> Fragrant rice with juicy mutton.</P><!--description-->
+<span class="price">AED 30</span><!--price-->
+    <button onclick="addToCart('MUTTON KARAHI', 30)">ADD TO CART</button><!--button--> 
+    </div>
+     <div class="menu-item">
+<img src="beef biryani.jpg" alt="BEEF BIRYANI">
+<h3>BEEF BIRYANI </h3>
+<P>Bold, flavorful beef with aromatic rice.</P><!--description-->
+<span class="price">AED 28</span><!--price-->
+    <button onclick="addToCart('BEEF BIRYANI', 28)">ADD TO CART</button><!--button--> 
+    </div>
+     <div class="menu-item">
+<img src="hydrabadi biryani.jpg" alt="HYDERABADI BIRYANI">
+<h3>HYDERABADI BIRYANI </h3>
+<P>Rich, layered biryani with bold spices.</P><!--description-->
+<span class="price">AED 32</span><!--price-->
+    <button onclick="addToCart('HYDERABADI BIRYANI', 32)">ADD TO CART</button><!--button--> 
+    </div>
+     <div class="menu-item">
+<img src="prawn biryani.jpg" alt="PRAWNS BIRYANI">
+<h3>PRAWNS BIRYANI </h3>
+<P>Zesty prawns layered in spiced rice.</P><!--description-->
+<span class="price">AED 20</span><!--price-->
+    <button onclick="addToCart('PRAWN BIRYANI', 20)">ADD TO CART</button><!--button--> 
+    </div>
+     <div class="menu-item"><!--rice items-->
+<img src="chicken pulao.jpg" alt="CHICKEN PULAO">
+<h3>CHICKEN PULAO</h3>
+<P> Mild rice with tender chicken pieces.</P><!--description-->
+<span class="price">AED 25</span><!--price-->
+    <button onclick="addToCart('CHICKEN PULAO', 25)">ADD TO CART</button><!--button--> 
+    </div>
+     <div class="menu-item">
+<img src="mutton pulao.jpg" alt="MUTTON PULAO">
+<h3>MUTTON PULAO</h3>
+<P> Savory rice with soft mutton.</P><!--description-->
+<span class="price">AED 30</span><!--price-->
+    <button onclick="addToCart('MUTTON PUALO', 30)">ADD TO CART</button><!--button--> 
+    </div>
+     <div class="menu-item">
+<img src="beef pulao.jpg" alt="BEEF PULAO">
+<h3>BEEF PULAO</h3>
+<P>Flavored rice with succulent beef.</P><!--description-->
+<span class="price">AED 28</span><!--price-->
+    <button onclick="addToCart('BEEF PULAO', 28)">ADD TO CART</button><!--button--> 
+    </div>
+     <div class="menu-item">
+<img src="kabli pulao.jpg" alt="KABLI PULAO">
+<h3>KABLI PULAO</h3>
+<P>Subtle spices, raisins, and tender meat.</P><!--description-->
+<span class="price">AED 35</span><!--price-->
+    <button onclick="addToCart('KABLI PUALO', 35)">ADD TO CART</button><!--button-->
+    </div>
+     <div class="menu-item">
+<img src="chana pulao.jpg" alt="CHANA PULAO">
+<h3>CHANA PULAO</h3>
+<P>Fragrant rice with spiced chickpeas.</P><!--description-->
+<span class="price">AED 20</span><!--price-->
+    <button onclick="addToCart('CHANA PULAO', 20)">ADD TO CART</button><!--button-->
+    </div>
+     <div class="menu-item"><!--chinese-->
+<img src="chicken manchurian.jpg" alt="CHICKEN MANCHURIAN ">
+<h3>CHICKEN MANCHURIAN</h3>
+<P>Tangy chicken in spicy gravy.</P><!--description-->
+<span class="price">AED 25</span><!--price-->
+    <button onclick="addToCart('CHICKEN MANCHURIAN', 25)">ADD TO CART</button><!--button-->
+    </div>
+<div class="menu-item">
+<img src="chicken chiili dry.jpg" alt="CHICKEN CHILLI">
+<h3>CHICKEN CHILLI</h3>
+<p> Spicy stir-fried chicken with peppers.</p><!--description-->
+<span class="price">AED 30</span><!--price-->
+    <button onclick="addToCart('CHICKEN CHILLI DRY', 30)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+<img src="szechaun chicken.jpg" alt="SZECHAUN CHICKEN">
+<h3>SZECHAUN CHICKEN</h3>
+<p> Fiery chicken in bold Szechuan sauce.</p><!--description-->
+<span class="price">AED 30</span><!--price-->
+    <button onclick="addToCart('SZECHAUN CHICKEN', 30)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+<img src="chicken chowmein.jpg" alt="CHICKEN CHOWMEIN">
+<h3>CHICKEN CHOWMEIN</h3>
+<p>Stir-fried noodles with tender chicken, crisp veggies, and savory soy sauce.</p><!--description-->
+<span class="price">AED 20</span><!--price-->
+    <button onclick="addToCart('CHICKEN CHOWMEIN', 20)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+<img src="veg chowmein.jpg" alt="VEGETABLE CHOWMEIN">
+<h3>VEGETABLE CHOWMEIN</h3>
+<p>Fresh veggies and noodles tossed in a flavorful soy-garlic stir-fry.</p><!--description-->
+<span class="price">AED 15</span><!--price-->
+    <button onclick="addToCart('SZECHAUN CHICKEN', 15)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item"><!--chinese rice items-->
+<img src="fried rice.jpg" alt="EGG FRIED RICE">
+<h3>EGG FRIED RICE</h3>
+<p>Stir-fried rice with scrambled egg.</p><!--description-->
+<span class="price">AED 15</span><!--price-->
+    <button onclick="addToCart(' EGG FRIED RICE', 15)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+<img src="chicken fried rice.jpg" alt="CHICKEN FRIED RICE">
+<h3>CHICKEN FRIED RICE</h3>
+<p>Rice tossed with chicken and veggies.</p><!--description-->
+<span class="price">AED 25</span><!--price-->
+    <button onclick="addToCart('CHICKEN FRIED RICE', 25)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+<img src="veg fried rice.jpg" alt="VEGETABLE FRIED RICE">
+<h3>VEGETABLE FRIED RICE</h3>
+<p>Mixed vegetables stir-fried with rice.</p><!--description-->
+<span class="price">AED 20</span><!--price-->
+    <button onclick="addToCart('VEGETABLE FRIED RICE', 20)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item"><!--handi-->
+    <img src="chicken handi.jpg" alt="CHICKEN HANDI">
+    <h3>CHICKEN HANDI</h3>
+<p>Creamy chicken cooked in a clay pot.</p><!--description-->
+<span class="price">AED 30</span><!--price-->
+    <button onclick="addToCart('CHICKEN HANDI', 30)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="mutton handi.jpg" alt="MUTTON HANDI">
+    <h3>MUTTON HANDI</h3>
+<p>Tender mutton in rich, spiced gravy.</p><!--description-->
+<span class="price">AED 60</span><!--price-->
+    <button onclick="addToCart('MUTTON HANDI', 60)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="beef handi.jpg" alt="BEEF HANDI">
+    <h3>BEEF HANDI</h3>
+<p> Slow-cooked beef in traditional spices.</p><!--description-->
+<span class="price">AED 40</span><!--price-->
+    <button onclick="addToCart('BEEF HANDI', 40)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="chicken white hani.jpg" alt="WHITE HANDI">
+    <h3>WHITE HANDI</h3>
+<p>Mild, creamy chicken in white sauce.</p><!--description-->
+<span class="price">AED 50</span><!--price-->
+    <button onclick="addToCart('WHITE HANDI', 50)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="achari handi.jpg" alt="ACHARI HANDI">
+    <h3>ACHARI HANDI</h3>
+<p>Chicken in tangy, pickle-style gravy.</p><!--description-->
+<span class="price">AED 450</span><!--price-->
+    <button onclick="addToCart('ACHARI HANDI', 45)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="brain masala.jpg" alt="BRAIN MASALA">
+    <h3>BRAIN MASALA</h3>
+<p> Spiced brain curry with rich masala.</p><!--description-->
+<span class="price">AED 70</span><!--price-->
+    <button onclick="addToCart('BRAIN MASALA', 70)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item"><!--seafood-->
+    <img src="grilled fish.jpg" alt="GRILLED FISH">
+    <h3>GRILLED FISH</h3>
+<p>Lightly spiced, chargrilled fish fillet.</p><!--description-->
+<span class="price">AED 40</span><!--price-->
+    <button onclick="addToCart('GRILLED FISH', 40)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="freid fish.jpg" alt="FRIED FISH">
+    <h3>FRIED FISH</h3>
+<p>Crispy, deep-fried fish with seasoning.</p><!--description-->
+<span class="price">AED 35</span><!--price-->
+    <button onclick="addToCart('FRIED FISH', 35)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="finger fish.jpg" alt="FINGER FISH">
+    <h3>FINGER FISH </h3>
+<p> Crunchy fish strips perfect for snacking.</p><!--description-->
+<span class="price">AED 25</span><!--price-->
+    <button onclick="addToCart('FINGER FISH', 25)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item"><!--soup-->
+    <img src="chicken soup.jpg" alt="CHICKEN SOUP">
+    <h3>CHICKEN SOUP</h3>
+<p> Light broth with tender chicken.</p><!--description-->
+<span class="price">AED 15</span><!--price-->
+    <button onclick="addToCart('CHICKEN SOUP', 15)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="chicken corn soup.jpg" alt="CHICKEN CORN SOUP">
+    <h3>CHICKEN CORN SOUP</h3>
+<p> Creamy soup with chicken and corn.</p><!--description-->
+<span class="price">AED 20</span><!--price-->
+    <button onclick="addToCart('CHICKEN CORN SOUP', 20)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="fusion feast special soup.jpg" alt="FUSION FEAST SPECIAL SOUP">
+    <h3>FUSION FEAST SPECIAL SOUP</h3>
+<p>Organic Chicken Broth With Chunks Of CHICKEN, Black Olives & Veggies</p><!--description-->
+<span class="price">AED 30</span><!--price-->
+    <button onclick="addToCart('FUSION FEAST SOUP', 30)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item"><!--paratha-->
+    <img src="roll paratha.jpg" alt="ROLL PARATHA">
+    <h3>ROLL PARATHA</h3>
+<p> Spicy grilled chicken in a paratha wrap.</p><!--description-->
+<span class="price">AED 10</span><!--price-->
+    <button onclick="addToCart('ROLL PARATHA', 10)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="malai boti roll paratha.jpg" alt="MALAI BOTI ROLL PARATHA">
+    <h3>MALAI BOTI ROLL PARATHA</h3>
+<p>Creamy malai boti rolled in paratha.</p><!--description-->
+<span class="price">AED 20</span><!--price-->
+    <button onclick="addToCart('MALAI BOTI PARATHA', 20)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="green chicken roll paratha.jpg" alt="GREEN CHICKEN ROLL PARATHA">
+    <h3>GREEN CHICKEN ROLL PARATHA</h3>
+<p> Herbed green chicken in soft paratha.</p><!--description-->
+<span class="price">AED 15</span><!--price-->
+    <button onclick="addToCart('GREEN CHILLI PARATHA', 15)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item"><!--roti-->
+    <img src="tandoori roti.jpg" alt="TANDOORI ROTI">
+    <h3>TANDOORI ROTI</h3>
+<span class="price">AED 2</span><!--price-->
+    <button onclick="addToCart('TANDOORI ROTI', 2)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="naan.webp" alt="SADA NAAN">
+    <h3>SADA NAAN</h3>
+<span class="price">AED 2</span><!--price-->
+    <button onclick="addToCart('SADA NAAN', 2)">ADD TO CART</button><!--button-->
+
+</div>
+<div class="menu-item">
+    <img src="roghni naan.jpg" alt="ROGHNI NAAN">
+    <h3>ROGHNI NAAN</h3>
+<span class="price">AED 4</span><!--price-->
+    <button onclick="addToCart('ROGHNI NAAN', 4)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="kalonji naan.jpg" alt="KALONGI NAAN">
+    <h3>KALONJI NAAN</h3>
+<span class="price">AED 4</span><!--price-->
+    <button onclick="addToCart('KALONJI NAAN', 4)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="garlic naan.jpg" alt="GARLIC NAAN">
+    <h3>GARLIC NAAN </h3>
+<span class="price">AED 6</span><!--price-->
+    <button onclick="addToCart('GARLIC NAAN', 6)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item"><!--shakes-->
+    <img src="strawberry shake.jpg" alt="STRAWBERRY SHAKE">
+    <h3>STRAWBERRY SHAKE </h3>
+<span class="price">AED 12</span><!--price-->
+    <button onclick="addToCart('STRAWBERRY SHAKE', 12)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="banana shake.jpg" alt="BANANA SHAKE">
+    <h3>BANANA SHAKE</h3>
+<span class="price">AED 12</span><!--price-->
+    <button onclick="addToCart('BANANA SHAKE', 12)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="mango shake.jpg" alt="MANGO SHAKE">
+    <h3>MANGO SHAKE</h3>
+<span class="price">AED 12</span><!--price-->
+    <button onclick="addToCart('MANGO SHAKE', 12)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="oreo shake.jpg" alt="OREO SHAKE">
+    <h3>OREO SHAKE</h3>
+<span class="price">AED 15</span>
+    <button onclick="addToCart('OREO SHAKE', 15)">ADD TO CART</button>
+</div>
+<div class="menu-item"><!--drinks-->
+    <img src="mint margarita.jpg" alt="MINT MARGARITA">
+    <h3>MINT MARGARITA</h3>
+<span class="price">AED 10</span><!--price-->
+    <button onclick="addToCart('MINT MARGARITA', 10)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="water.jpg" alt="WATER">
+    <h3>WATER</h3>
+<span class="price">AED 5</span><!--price-->
+    <button onclick="addToCart('WATER', 5)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item"><!--sweet-->
+    <img src="zarda.jpg" alt="ZARDA" >
+    <h3>ZARDA</h3>
+<p>Sweet saffron rice with nuts.</p><!--description-->
+<span class="price">AED 15</span><!--price-->
+    <button onclick="addToCart('ZARDA', 15)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="matanjan.jpg" alt="MATANJUN">
+    <h3>MATANJUN</h3>
+<p>Colorful sweet rice with fruits and dry fruits.</p><!--description-->
+<span class="price">AED 15</span><!--price-->
+    <button onclick="addToCart('MATANJAN', 15)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="kheer.jpg" alt="KHEER(RICE PUDDING)">
+    <h3>KHEER</h3>
+<p> Creamy rice pudding.</p><!--description-->
+<span class="price">AED 20</span><!--price-->
+    <button onclick="addToCart('KHEER', 20)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="gulab jamun.jpg" alt="GULAB JAMUN">
+    <h3>GULAB JAMUN</h3>
+<p> Soft milk balls in sugar syrup.</p><!--description-->
+<span class="price">AED 13</span><!--price-->
+    <button onclick="addToCart('GULAB JAMUN', 13)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="jalebi.jpg" alt="JALEBI">
+    <h3>JALEBI</h3>
+<p>Crispy, syrup-soaked sweet spirals.</p><!--description-->
+<span class="price">AED 13</span><!--price-->
+    <button onclick="addToCart('JALEBI', 13)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="gajar ka hakwa.jpg" alt="GAJAR KA HALWA">
+    <h3>GAJAR HALWA</h3>
+<p>Sweet carrot dessert cooked in milk and ghee.</p><!--description-->
+<span class="price">AED 20</span><!--price-->
+    <button onclick="addToCart('GAJAR KA HALWA', 20)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="seviyan.jpg" alt="SEVIYAN">
+    <h3>SEVIYAN </h3>
+<p> Sweet roasted vermicelli pudding.</p><!--description-->
+<span class="price">AED 13</span><!--price-->
+    <button onclick="addToCart('SEVIYAN', 13)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="brownie.jpg" alt="BROWNIE">
+    <h3>BROWNIE</h3>
+<p>Rich, fudgy chocolate square.</p><!--description-->
+<span class="price">AED 10</span><!--price-->
+    <button onclick="addToCart('BROWNIE', 10)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="chocolate barfi.jpg" alt="CHOCOLATE BARFI">
+    <h3>CHOCOLATE BARFI</h3>
+<p> Sweet chocolate milk fudge.</p><!--description-->
+<span class="price">AED 13</span><!--price-->
+    <button onclick="addToCart('CHOCOLATE BARFI', 13)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item"><!--salad-->
+    <img src="kachumbar salad.jpg" alt="KACHUMBAR SALAD ">
+    <h3>KACHUMBAR SALAD</h3>
+<p>Chopped cucumber, onion, and tomato mix.</p><!--description-->
+<span class="price">AED 8</span><!--price-->
+    <button onclick="addToCart('KACHUMBAR SALAD', 8)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="raita.jpg" alt="RAITA">
+    <h3>RAITA</h3>
+<p> Yogurt with herbs and spices.</p><!--description-->
+<span class="price">AED 8</span><!--price-->
+    <button onclick="addToCart('RAITA', 8)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="chana chaat.jpg" alt="CHANA CHAAT">
+    <h3>CHANA CHAAT</h3>
+<p> Spiced chickpea mix.</p><!--description-->
+<span class="price">AED 15</span><!--price-->
+    <button onclick="addToCart('CHANA CHAAT', 15)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="fruit chaat.jpg" alt="FRUIT CHAAT">
+    <h3>FRUITS CHAAT</h3>
+<p> Mixed fruits tossed in tangy spice.</p><!--description-->
+<span class="price">AED 20</span><!--price-->
+    <button onclick="addToCart('FRUIT CHAAT', 20)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="macroni salad.jpg" alt="MACRONI SALAD">
+    <h3>MACRONI SALAD </h3>
+<p>Creamy pasta with veggies.</p><!--description-->
+<span class="price">AED 25</span><!--price-->
+    <button onclick="addToCart('MACRONI SALAD', 25)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="russian salad.jpg" alt="RUSSIAN SALAD">
+    <h3>RUSSIAN SALAD</h3>
+<p>Creamy salad with fruits and vegetables.</p><!--description-->
+<span class="price">AED 25</span><!--price-->
+    <button onclick="addToCart('RUSSIAN SALAD', 25)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item"><!--platters-->
+    <img src="mix grilled.jpg" alt="MIX GRILLED">
+    <h3>MIX GRILLED</h3>
+<p>mix grill with min margarita</p><!--description-->
+<span class="price">AED 100</span><!--price-->
+    <button onclick="addToCart('PLATTER 1 ', 100)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="platter 1.jfif" alt="platter 1">
+    <h3>PLATTER 1</h3>
+<p>chicken karahi, kabuli pulao, 2 malai boti, russian salad, 2 mint margarita, 2 naan, 2 brownie </p><!--description-->
+<span class="price">AED 100</span><!--price-->
+    <button onclick="addToCart('PLATTER 2', 100)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="platter 2.jfif" alt="platter 2">
+    <h3>PLATTER 2</h3>
+<p>chowmein, white karahi, 1 seekh kabab, macroni salad, 2 mint margarita, gulab jamun</p><!--description-->
+<span class="price"> AED 100</span><!--price-->
+    <button onclick="addToCart('PLATTER 3', 100)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item"><!--disposable-->
+    <img src="disp.jpg" alt="DISPOSABLE GLASS">
+    <h3>DISPOSABLE GLASS</h3>
+<span class="price">AED 1</span><!--price-->
+    <button onclick="addToCart('DISPOSABLE GLASS', 1)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="disposable plate.jpg" alt="DISPOSABLE PLATE">
+    <h3>DISPOSABLE PLATE</h3>
+<span class="price">AED 1</span><!--price-->
+    <button onclick="addToCart('DISPOSABLE PLATE', 30)">ADD TO CART</button><!--button-->
+</div>
+<div class="menu-item">
+    <img src="disposable spoon.jpg" alt="DISPOSABLE SPOON">
+    <h3>DISPOSABLE SPOON</h3>
+<span class="price">AED 1</span><!--price-->
+    <button onclick="addToCart('DISPOSABLE SPOON', 1)">ADD TO CART</button><!--button-->
+</div>
+<footer class="footer"><!--footer section-->
+<ul>Phone:+971 123 4567  &nbsp; &nbsp; &nbsp; Email:Fusionfeast@gmail.com </ul>
+<b>Our Timings</b><!--fusion feast restaurant timing-->
+<ul>Monday, Thursday : 11:30 AM - 01:30 AM</ul>
+<ul>Friday : 02:00 PM - 01:30 AM</ul>
+<ul>saturday, sunday 11:30 AM - 01:30 AM</ul>
+&copy; fusion feast 
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

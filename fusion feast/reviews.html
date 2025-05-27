@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Review</title>
+<link rel="stylesheet" href="stylef.css">
+</head>
+<body>
+  <header>
+         <img src="fusion feast 2.png" alt="logo" width="150" height="150" class="header-image"><!--fusion feast logo-->
+    <h1>FUSION FEAST CUSTOMER REVIEWS</h1><!--heading-->
+    <p>share your experience with us</p>
+       <nav class="navbar"><!--navbar-->
+    <a href="home.html">HOMEPAGE</a><!--connecting with other pages-->
+<a href="menu.html">MENU PAGE</a><!--connecting with other pages-->
+<a href="online ordering.html">ORDER ONLINE</a><!--connecting with other pages-->
+<a href="about us.html">ABOUT US</a><!--connecting with other pages-->
+<a href="chef special.html">OUR CHEF</a><!--connecting with other pages-->
+</nav>
+  </header>
+  <div class="container">
+    <h1>Leave a Review</h1><!--heading-->
+    <form id="reviewForm">
+      <input type="text" id="name" placeholder="Your Name" required /><!--asking user to input name-->
+      <div class="stars">
+        <input type="radio" name="rating" id="rate5" value="5" required><label for="rate5">★</label><!--ratings-->
+        <input type="radio" name="rating" id="rate4" value="4"><label for="rate4">★</label><!--ratings-->
+        <input type="radio" name="rating" id="rate3" value="3"><label for="rate3">★</label><!--ratings-->
+        <input type="radio" name="rating" id="rate2" value="2"><label for="rate2">★</label><!--ratings-->
+        <input type="radio" name="rating" id="rate1" value="1"><label for="rate1">★</label><!--ratings-->
+      </div>
+      <textarea id="message" placeholder="Write your review..." required></textarea><!--asking user to write his/her review-->
+      <button type="submit">Submit Review</button><!--submit button-->
+    </form>
+    <div id="reviewList">
+      <h2>Customer Reviews</h2><!--second heading-->
+    </div>
+  </div>
+<footer class="footer"><!--footer section-->
+<ul>Phone:+971 123 4567  &nbsp; &nbsp; &nbsp; Email:Fusionfeast@gmail.com </ul>
+Our Timings<!--fusion feast restaurant timing-->
+<ul>Monday, Thursday : 11:30 AM - 01:30 AM</ul>
+<ul>Friday : 02:00 PM - 01:30 AM</ul>
+<ul>saturday, sunday 11:30 AM - 01:30 AM</ul>
+&copy; fusion feast 
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

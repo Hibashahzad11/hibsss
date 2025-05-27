@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>online ordering</title>
+  <link rel="stylesheet" href="stylef.css">
+</head>
+<body>
+<header class="online-ordering">
+        <img src="fusion feast 2.png" alt="logo" width="150" height="150" class="header-image"><!--fusion feast logo-->
+    <h1>ORDER ONLINE</h1><!--header-->
+    <p>ENJOY 10% DISCOUNT ON YOUR FIRST ORDER</p>
+       <nav class="navbar"><!--navbar-->
+    <a href="home.html">HOMEPAGE</a><!--connecting with other pages-->
+<a href="menu.html">MENU PAGE</a><!--connecting with other pages-->
+<a href="about us.html"> ABOUT US</a><!--connecting with other pages-->
+<a href="reviews.html">REVIEWS</a><!--connecting with other pages-->
+<a href="chef special.html">OUR CHEF</a><!--connecting with other pages-->
+</nav>
+  </header>
+  <div id="cart"><!--showing cart-->
+    <h2>Your Cart</h2><!--heading-->
+    <ul id="cart-items"></ul>
+    <p>Total: AED <span id="total">0</span></p><!--gives total-->
+  </div>
+
+  <div id="order-form">
+    <h2>Delivery Details</h2><!--heading-->
+    <input type="text" id="name" placeholder="Your Name" required><!--asking from user to input name-->
+    <input type="text" id="phone" placeholder="Phone Number" required><!--asking from user to input phone number-->
+    <input type="text" id="address" placeholder="Delivery Address" required><!--asking from user to input delivery address-->
+    <textarea id="notes" placeholder="Any special instructions?"></textarea><!--asking from user to input any special instructions-->
+    <button onclick="placeOrder()">Place Order</button><!--place order button-->
+</div>
+<footer class="footer"><!--footer section-->
+<ul>Phone:+971 123 4567  &nbsp; &nbsp; &nbsp; Email:Fusionfeast@gmail.com </ul>
+Our Timings<!--fusion feast restaurant timing-->
+<ul>Monday, Thursday : </b>11:30 AM - 01:30 AM</ul>
+<ul>Friday : 02:00 PM - 01:30 AM</ul>
+<ul>saturday, sunday 11:30 AM - 01:30 AM</ul>
+&copy; fusion feast 
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

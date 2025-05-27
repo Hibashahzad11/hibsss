@@ -1,0 +1,333 @@
+*{
+box-sizing: border-box;
+}
+body{
+    background-color:#fcefef;/* background color*/
+        font-family:'Times New Roman', Times, serif;/*font*/
+    margin: 0;/*removes default margin*/
+    padding: 0;/*removes default padding*/
+}
+.fusion-feast{
+  padding: 40px;/* Adds space inside the container */
+  font-family:'Times New Roman', Times, serif;/*font*/
+background-color:rgb(155,25,27,255);/* background color*/
+  color: #ffffff;/*text color*/
+  text-align: center;/*alligning the items*/
+}
+.header-image {
+  position: absolute;/*positioning the image*/
+  top: 20px;/*top position of a image*/
+  left: 30px;/*lest position of a image*/
+  width: 200px;/*width*/
+  height: 150px;/*height*/
+}
+.navbar {
+  background-color:rgb(155,25,27,255);/* background color*/
+  padding: 1em;/* Adds space inside the container */
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  color:white;/*text color*/
+  margin: 0 15px; /* Adds space outside the container */
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover{
+  color: #f78897;
+}
+.coming-soon{
+  color: #000000;/*text color*/
+  text-align: center;
+  padding: 20px;/* Adds space inside the container */
+background-color:#fcefef;/* background color*/
+font-size: 24px;/*font size*/
+font-weight: bold;
+margin: 20px; /* Adds space outside the container */
+border: 2px solid #000000;
+border-radius: 10px;
+}
+ #searchBar {
+  font-size: 18px;/*font size*/
+            width: 90%;
+            padding: 12px;/* Adds space inside the container */
+            margin-bottom: 20px; /* Adds space outside the container */
+            border: 2px solid rgb(155,25,27,255);/*background color */
+          }
+        .search button{
+          font-size: 18px;/*font size*/
+          width: 6%;/*width*/
+          padding: 15px;/* Adds space inside the container */
+          font-family: 'Times New Roman', Times, serif;/*font*/
+          background-color: rgb(155,25,27,255);/* background color*/
+          color: white;/*text color*/
+          border: solid 2px #aa182c; 
+          border-radius: 8px;
+          cursor: pointer;
+
+        }
+.menu-container {
+  display: flex;/*flex display*/
+  flex-wrap: wrap;/*flex wrap*/
+  justify-content: center;/*alligning the items to center */
+  gap: 20px;/*adds space between items*/
+  padding: 20px;/* Adds space inside the container */
+  background-color:#fae7e7;/* background color*/
+}
+
+.menu-item {
+  width: 300px;/*width*/
+  border: 1px solid #ddd;/*border style and width*/
+  border-radius: 12px;/*border radius*/ 
+  padding: 16px;/* Adds space inside the container */
+  background-color: #fff;/*background color*/
+  text-align: center;/*alligning the text*/
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);/*adds shadow effect*/
+  transition: transform 0.3s ease, box-shadow 0.3s ease;/*transition effect on hover*/
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);/*moves the item up on hover*/
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);/*adds a shadow effect on hover*/
+}
+
+.menu-item img {
+  width: 100%;/*width*/
+  height: 200px;/*height*/
+  object-fit: cover;/*ensures image covers the area without distortion*/
+  border-radius: 8px;/*border radius*/
+}
+
+.menu-item h3 {
+
+  margin: 12px 0 6px; /* Adds space outside the container */
+  font-size: 20px;/*font size*/
+  color:#f7e7d3;/*text color*/
+}
+
+.menu-item p {
+  font-size: 18px;/*font size*/
+  color: #000000;/*text color*/
+  margin-bottom: 10px;/* Adds space outside the container */
+}
+
+.menu-item .price {
+  display: block;/*displaying the price in a block*/
+  color: #000000;/*text color*/
+  margin-bottom: 10px; /* Adds space outside the container */
+  font-weight: bold;/*font weight*/
+}
+
+.menu-item button {
+  padding: 10px 20px;/* Adds space inside the container */
+  background-color:#f7e7d3;/* background color*/
+  color: black;/*text color*/
+  border: none;
+  border-radius: 6px;/*border radius*/
+  cursor: pointer;/*cursor*/
+  font-size: 14px;/*font size*/
+  transition: 0.3s ease;/*transition effect for button hover*/
+}
+
+.menu-item button:hover {
+  background-color: #b83245;/*button hover*/
+}
+header {
+        font-family: 'Times New Roman', Times, serif;/*font*/
+      background-color:rgb(155,25,27,255);/* background color*/
+      color: white;/*text color*/
+      padding: 50px;/* Adds space inside the container */
+      text-align: center;/*alligning the text*/
+    }
+    .menu-item h3 {
+      margin: 0;
+      color: #000000;/*text color*/
+    }
+    button {
+      margin-top: 5px;/* Adds space outside the container */
+      padding: 5px 10px;/* Adds space inside the container */
+      background-color:rgb(155,25,27,255);/* background color*/
+      color: white;/*text color*/
+      border: none;
+      border-radius: 5px;/*border radius*/
+      cursor: pointer;/*cursor to pointer*/
+    }
+  .online-ordering{
+background-color: rgb(155,25,27,255);/* background color*/
+    color: white;/*text color*/
+    padding: 20px;/* Adds space inside the container */
+margin: auto; /* Adds space outside the container */
+  }
+
+    #cart {
+      background-color:rgb(155,25,27,255);/* background color*/
+      border: 1px;/*border width*/
+      border-color: #000000;/*border color*/
+   border-style: solid;/*border style*/
+      color: rgb(255, 255, 255);/*text color*/
+      padding: 10px;/* Adds space inside the container */
+      margin: 20px; /* Adds space outside the container */
+      border-radius: 20px;/*border radius*/
+    }
+    #cart h2{
+      color: #ffffff;/*text color*/
+      text-align: center;/*alligning the text*/
+      margin-bottom: 20px; /* Adds space outside the container */
+    }
+    #cart p{
+      color: #ffffff;/*text color*/
+    }
+    #order-form {
+      padding: 20px;/* Adds space inside the container */
+    }
+  
+    input, textarea {
+      width: 100%;/*width*/
+      padding: 10px;/* Adds space inside the container */
+      margin: 10px 0; /* Adds space outside the container */
+      border: 1px solid;/*border style and width*/
+      border-color:rgb(155,25,27,255);/* background color*/
+      border-radius: 5px;/*border radius*/
+    }
+    .container {
+      max-width: 900px;
+      margin: 1%; /* Adds space outside the container */
+      background-color:#fcefef;/*background color*/
+      padding: 30px;/* Adds space inside the container */
+      border-radius: 10px;/*border radius*/
+      border: 2px solid rgb(155,25,27,255);/*border style and width*/
+      height: auto;/*height of the container*/
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);/*box shadow*/
+    }
+    h1, h2 {
+      text-align: center;/*alligning the text*/
+    }
+
+    .stars {
+      display: flex;/**flex display to arrange the stars in a row*/
+      flex-direction: row-reverse;/**flex direction to reverse the order of stars*/
+      justify-content: flex-start;/*alligning the stars to left*/
+    }
+
+    .stars input {
+      display: none;
+    }
+
+    .stars label {
+      font-size: 24px;/*font size*/
+      color: lightgray;/*color*/
+      cursor: pointer;/*cursor*/
+    }
+
+    .stars input:checked ~ label,
+    .stars label:hover,
+    .stars label:hover ~ label {
+      color: gold;/*color*/
+    }
+
+    .review {
+    border-style: solid 2px;/*border style and width*/
+    border-color: rgb(155,25,27,255);/* background color*/
+    margin-top: 15px; /* Adds space outside the container */
+      padding-top: 10px;/* Adds space inside the container */
+      padding-bottom: 10px;/* Adds space inside the container */
+    }
+
+    .review h3 {
+      margin: 0;
+    }
+
+    .review .star-display {
+      color: rgb(255, 217, 0);/*stars color*/
+      font-size: 18px;/*font size*/
+    }
+    ul{
+      font-style:oblique;/*font style*/
+      list-style: square;/*list style*/
+      padding-left: 20px;/*Add space inside the container*/
+      margin: 0%;
+    }
+    header p{
+  margin: 0;
+  padding: 0%;
+  font-size: 18px;/*font size*/
+  color: #ffffff;/*text color*/
+  text-align: center;
+  margin-top: 20px; /* Adds space outside the container */
+  margin-bottom: 20px; /* Adds space outside the container */
+    }
+p{
+  margin: 0;
+  padding: 0%;
+  font-size: 18px;/*font size*/
+  color:#000000;/*text color*/
+  text-align: center;/*alligning the text*/
+  margin-top: 20px; /* Adds space outside the container */
+  margin-bottom: 20px; /* Adds space outside the container */
+}
+.chef-special{
+    padding: 50px;/* Adds space inside the container */
+background-color:rgb(155,25,27,255);/* background color*/
+  color: #ffffff;/*text color*/
+  text-align: center;/*alligning the text*/
+}
+.chef{
+  padding: 40px;/* Adds space inside the container */
+background-color:#fae7e7;/* background color*/
+color: #000000;/*text color*/
+text-align: left;/*alligning the text*/
+      display: grid;/*display grid*/
+      grid-template-columns: repeat(3, 1fr);/*create 3 equal colums*/
+      gap: 10px;/*gap between columns*/
+}
+.chinese-chef{
+  padding: 40px;/* Adds space inside the container */
+  background-color: #fae7e7;/* background color*/
+  color: #000000;/*text color*/
+  text-align: left; /*alligning the text*/
+}
+.chinese-chef p{
+  text-align: center;/*alligning the text*/
+}
+.pakistani-chef{
+    padding: 40px;/* Adds space inside the container */
+  background-color: #fae7e7;/* background color*/
+  color: #000000;/*text color*/
+  text-align: left;/*allighning the text*/ 
+}
+.pakistani-chef p{
+  text-align: center;/*alligning the text*/
+}
+.chinese-chef img,
+ .pakistani-chef img{
+  border-width: 3px;/*border width*/
+    border-radius: 10px;/*border radius*/
+  border-style: solid;/*boder style*/
+  border-color: rgb(155,25,27,255);/*border color*/
+     width: 100%;/*width*/
+      height: 60%;/*height*/
+      display: block;/*displaying the image as block*/
+}
+.foot-section{
+  background-color: rgb(155,25,27,255);/*background color*/
+  color:rgb(255, 255, 255);/*text color*/
+    font-size: 18px; /*font size*/
+    position: fixed;/*position*/
+  bottom: 0;
+  left: 0;
+  width: 100%;/*width of footer*/
+  text-align: center;
+  padding: 8px;/* Adds space inside the container */
+}
+.footer{
+    background-color: rgb(155,25,27,255);/* background color*/
+  color:rgb(255, 255, 255);/*text color*/
+    font-size: 18px; /*font size*/
+      bottom: 0;
+  left: 0;
+  width: 100%;/*width of footer*/
+  text-align: center;/*arranging the text*/
+  padding: 10px;/* Adds space inside the container */
+}
